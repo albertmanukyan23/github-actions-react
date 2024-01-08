@@ -11,8 +11,8 @@ jobs:
       - name: Test application
         run: npm run test
   lint:   
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Get reposit ory code
         uses: actions/checkout@v3
       - name: Install dependencies
@@ -20,8 +20,8 @@ jobs:
       - name: Link application
         run: npm run link
   build:
-        runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Get reposit ory code
         uses: actions/checkout@v3
       - name: Install dependencies
